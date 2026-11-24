@@ -1,5 +1,6 @@
-import { MessageSquare, PanelLeftClose, Plus, Terminal } from "lucide-react";
+import { MessageSquare, PanelLeftClose, Plus } from "lucide-react";
 import type { HealthStatus } from "../types";
+import OllieMark from "./OllieMark";
 
 interface SessionSummary {
   id: string;
@@ -38,9 +39,9 @@ export default function Sidebar({
             className="flex h-6 w-6 items-center justify-center rounded"
             style={{ background: "var(--accent)" }}
           >
-            <Terminal size={14} color="var(--accent-text)" strokeWidth={2.5} />
+            <OllieMark size={14} color="var(--accent-text)" />
           </div>
-          <span className="text-sm font-semibold tracking-wide">LYFTR AI</span>
+          <span className="text-sm font-semibold tracking-wide">Ollie AI</span>
         </div>
         <button
           onClick={onClose}
@@ -99,7 +100,7 @@ export default function Sidebar({
           <span style={{ color: "var(--text-faint)" }}>BACKEND</span>
           <span className="flex items-center gap-1.5">
             <span
-              className="h-1.5 w-1.5 rounded-full"
+              className={`h-1.5 w-1.5 rounded-full ${backendOk ? "pulse-dot" : ""}`}
               style={{ background: backendOk ? "var(--accent)" : "var(--danger)" }}
             />
             <span style={{ color: backendOk ? "var(--text)" : "var(--danger)" }}>

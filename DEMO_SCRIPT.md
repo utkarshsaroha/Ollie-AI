@@ -4,7 +4,7 @@ Setup beforehand: `make up`, `.env` has 2 real `LLM_API_KEYS`, browser open to
 `http://localhost:3000`.
 
 **0:00–0:20 — What this is**
-"This is LYFTR AI, a chatbot with multi-turn memory, automatic API-key failover, LiteLLM
+"This is Ollie AI, a chatbot with multi-turn memory, automatic API-key failover, LiteLLM
 response caching, and SQLite persistence, running end-to-end with a FastAPI backend and a
 React frontend." Show the empty state and sidebar (session id, backend/keys/cache status).
 

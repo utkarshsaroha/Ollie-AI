@@ -1,6 +1,7 @@
-import { AlertTriangle, Bot, User } from "lucide-react";
+import { AlertTriangle, User } from "lucide-react";
 import type { ChatMessage } from "../types";
 import MetadataStrip from "./MetadataStrip";
+import OllieMark from "./OllieMark";
 
 function formatTime(ts: number) {
   return new Date(ts).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
@@ -23,7 +24,7 @@ export default function MessageBubble({ message }: { message: ChatMessage }) {
   const isUser = message.role === "user";
 
   return (
-    <div className={`flex gap-3 ${isUser ? "flex-row-reverse" : ""}`}>
+    <div className={`msg-in flex gap-3 ${isUser ? "flex-row-reverse" : ""}`}>
       <div
         className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-md border"
         style={{
@@ -31,7 +32,7 @@ export default function MessageBubble({ message }: { message: ChatMessage }) {
           background: isUser ? "var(--bg-elevated)" : "var(--accent-dim)",
         }}
       >
-        {isUser ? <User size={14} style={{ color: "var(--text-muted)" }} /> : <Bot size={14} style={{ color: "var(--accent)" }} />}
+        {isUser ? <User size={14} style={{ color: "var(--text-muted)" }} /> : <OllieMark size={14} color="var(--accent)" />}
       </div>
 
       <div className={`flex max-w-[75%] flex-col ${isUser ? "items-end" : "items-start"}`}>

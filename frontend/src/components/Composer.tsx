@@ -37,7 +37,7 @@ export default function Composer({ value, onChange, onSend, disabled }: Composer
           disabled={disabled}
           onChange={(e) => onChange(e.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Message LYFTR AI... (Enter to send, Shift+Enter for a new line)"
+          placeholder="Message Ollie... (Enter to send, Shift+Enter for a new line)"
           className="max-h-40 min-h-6 flex-1 resize-none overflow-y-auto bg-transparent text-sm leading-6 outline-none placeholder:text-[color:var(--text-faint)] disabled:opacity-50"
           style={{ color: "var(--text)" }}
         />

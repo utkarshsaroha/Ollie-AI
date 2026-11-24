@@ -173,7 +173,7 @@ export default function App() {
 
         <SystemPromptEditor value={systemPrompt} onChange={setSystemPrompt} />
 
-        <main className="flex-1 overflow-y-auto px-4 py-4">
+        <main className="chat-canvas flex-1 overflow-y-auto px-4 py-4">
           {messages.length === 0 ? (
             <EmptyState onPick={(p) => handleSend(p)} />
           ) : (
@@ -184,7 +184,7 @@ export default function App() {
               {isLoading && (
                 <div className="flex items-center gap-2 text-xs" style={{ color: "var(--text-faint)" }} data-testid="typing-indicator">
                   <Loader2 size={13} className="animate-spin" />
-                  LYFTR AI is thinking...
+                  Ollie is thinking...
                 </div>
               )}
               <div ref={bottomRef} />

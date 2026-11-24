@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Lyftr AI Chat API", lifespan=lifespan)
+app = FastAPI(title="Ollie AI Chat API", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,

@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
+import OllieMark from "./OllieMark";
 
 const SUGGESTED_PROMPTS = [
   "What is the capital of France?",
@@ -10,6 +11,15 @@ const SUGGESTED_PROMPTS = [
 export default function EmptyState({ onPick }: { onPick: (prompt: string) => void }) {
   return (
     <div className="flex h-full flex-col items-center justify-center px-6 text-center">
+      <div className="relative mb-5 flex h-14 w-14 items-center justify-center">
+        <span className="ollie-ring absolute inset-0 rounded-full" style={{ border: "1px solid var(--accent-dim)" }} />
+        <span
+          className="flex h-10 w-10 items-center justify-center rounded-full"
+          style={{ background: "var(--accent-dim)" }}
+        >
+          <OllieMark size={20} color="var(--accent)" pulse />
+        </span>
+      </div>
       <h1 className="text-2xl font-semibold tracking-tight" style={{ color: "var(--text)" }}>
         Intelligence, without interruption.
       </h1>

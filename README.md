@@ -1,4 +1,4 @@
-# LYFTR AI — Full-Stack LLM Chat
+# Ollie AI — Full-Stack LLM Chat
 
 A multi-turn chatbot with automatic API-key failover, LiteLLM-backed response caching,
 per-request token tracking, and SQLite-backed conversation persistence — FastAPI + LiteLLM
