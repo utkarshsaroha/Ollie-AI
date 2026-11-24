@@ -182,7 +182,7 @@ putting them live needs accounts/credentials this environment doesn't have, so t
 below are what to run, not a claim that it's already live.
 
 **Backend (Render, Docker-based web service):**
-1. Push this repo to GitHub.
+1. Repo is on GitHub: https://github.com/utkarshsaroha/Ollie-AI
 2. New Web Service → connect the repo → Root directory `backend`, Dockerfile `backend/Dockerfile`.
 3. Add a persistent disk mounted at `/data` (Render: "Add Disk"; ephemeral filesystem will lose
    the SQLite file on every deploy/restart otherwise).
