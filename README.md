@@ -67,7 +67,7 @@ npm run dev
 
 | Variable | Description |
 |---|---|
-| `LLM_MODEL` | LiteLLM `provider/model` string, e.g. `gemini/gemini-2.0-flash` |
+| `LLM_MODEL` | LiteLLM `provider/model` string, e.g. `gemini/gemini-3.5-flash-lite` |
 | `LLM_API_KEYS` | Comma-separated API keys, **minimum 2**, tried in order as `key_1`, `key_2`, ... |
 | `DATABASE_URL` | `sqlite:///<path>`; use `sqlite:////data/app.db` in Docker |
 | `ENABLE_FAILURE_SIMULATION` | `true`/`false` — enables the `X-Simulate-Failure` test header |

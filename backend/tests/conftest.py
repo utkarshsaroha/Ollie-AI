@@ -4,7 +4,7 @@ os.environ.setdefault("LLM_API_KEYS", "test-key-1,test-key-2")
 os.environ.setdefault("ENABLE_FAILURE_SIMULATION", "true")
 os.environ.setdefault("ALLOWED_ORIGINS", "http://localhost:3000")
 os.environ.setdefault("CACHE_ENABLED", "true")
-os.environ.setdefault("LLM_MODEL", "gemini/gemini-2.0-flash")
+os.environ.setdefault("LLM_MODEL", "gemini/gemini-3.5-flash-lite")
 
 import pytest
 from fastapi.testclient import TestClient
